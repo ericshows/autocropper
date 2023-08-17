@@ -9,8 +9,8 @@ import shutil
 
 def check_invalid():
 
-    folder_path = "/Users/ericshows/Downloads/maps_copy"
-    invalid_folder_path = "/Users/ericshows/Downloads/maps_invalid"
+    folder_path = "./maps"
+    invalid_folder_path = "./maps_invalid"
 
     # Create the invalid TIFF folder if it doesn't exist
     if not os.path.exists(invalid_folder_path):
@@ -273,11 +273,11 @@ def crop_and_save_image(target_path, rotated_path, output_folder):
 
 
 # Folder paths
-input_folder = "/Users/ericshows/Desktop/autocropper/maps"  # Folder containing target and source images
-converted_folder = "/Users/ericshows/Desktop/autocropper/maps_converted"
-rotated_folder = "/Users/ericshows/Desktop/autocropper/maps_rotated"
-output_folder = "/Users/ericshows/Desktop/autocropper/maps_cropped"  # Output folder for cropped images
-icc_path = "/System/Library/ColorSync/Profiles/sRGB Profile.icc"
+input_folder = "./maps"  # Folder containing target and source images
+converted_folder = "./maps_converted"
+rotated_folder = "./maps_rotated"
+output_folder = "./maps_cropped"  # Output folder for cropped images
+icc_path = "./sRGB Profile.icc"
 
 
 # Iterate over each file in the input folder
